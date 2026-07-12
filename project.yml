@@ -1,0 +1,50 @@
+name: IPSwitcher
+options:
+  bundleIdPrefix: com.ipswitcher
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+
+settings:
+  SWIFT_VERSION: "5.9"
+  SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited)
+
+targets:
+  IPSwitcher:
+    type: application
+    platform: iOS
+    sources:
+      - path: IPSwitcher
+        excludes:
+          - "Preview Content"
+    info:
+      path: IPSwitcher/Info.plist
+    entitlements:
+      path: IPSwitcher/Entitlements.plist
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.ipswitcher
+      INFOPLIST_FILE: IPSwitcher/Info.plist
+      CODE_SIGN_ENTITLEMENTS: IPSwitcher/Entitlements.plist
+      DEVELOPMENT_TEAM: ""
+    dependencies:
+      - target: Tunnel
+        type: appex
+
+  Tunnel:
+    type: appex
+    platform: iOS
+    sources:
+      - Tunnel
+    info:
+      path: Tunnel/Info.plist
+    entitlements:
+      path: Tunnel/Entitlements.plist
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.ipswitcher.tunnel
+      INFOPLIST_FILE: Tunnel/Info.plist
+      CODE_SIGN_ENTITLEMENTS: Tunnel/Entitlements.plist
+      DEVELOPMENT_TEAM: ""
+      APPLICATION_EXTENSION_API_ONLY: true
+    dependencies:
+      - sdk: NetworkExtension.framework
+      - sdk: Network.framework

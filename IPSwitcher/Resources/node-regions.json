@@ -1,0 +1,121 @@
+{
+  "regions": [
+    {
+      "code": "jp",
+      "name": "日本",
+      "flag": "🇯🇵",
+      "cities": ["东京", "大阪", "北海道"],
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "providers": ["AWS", "Vultr", "Linode", "GCP"]
+    },
+    {
+      "code": "hk",
+      "name": "香港",
+      "flag": "🇭🇰",
+      "cities": ["香港"],
+      "latitude": 22.3193,
+      "longitude": 114.1694,
+      "providers": ["阿里云", "GCP", "AWS"]
+    },
+    {
+      "code": "sg",
+      "name": "新加坡",
+      "flag": "🇸🇬",
+      "cities": ["新加坡"],
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "providers": ["AWS", "Linode", "DigitalOcean"]
+    },
+    {
+      "code": "kr",
+      "name": "韩国",
+      "flag": "🇰🇷",
+      "cities": ["首尔"],
+      "latitude": 37.5665,
+      "longitude": 126.9780,
+      "providers": ["AWS", "GCP"]
+    },
+    {
+      "code": "tw",
+      "name": "台湾",
+      "flag": "🇹🇼",
+      "cities": ["台北"],
+      "latitude": 25.0330,
+      "longitude": 121.5654,
+      "providers": ["AWS", "GCP"]
+    },
+    {
+      "code": "us",
+      "name": "美国",
+      "flag": "🇺🇸",
+      "cities": ["洛杉矶", "纽约", "硅谷", "达拉斯", "西雅图"],
+      "latitude": 34.0522,
+      "longitude": -118.2437,
+      "providers": ["Vultr", "AWS", "GCP", "DigitalOcean"]
+    },
+    {
+      "code": "gb",
+      "name": "英国",
+      "flag": "🇬🇧",
+      "cities": ["伦敦"],
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "providers": ["AWS", "DigitalOcean", "Linode"]
+    },
+    {
+      "code": "de",
+      "name": "德国",
+      "flag": "🇩🇪",
+      "cities": ["法兰克福"],
+      "latitude": 50.1109,
+      "longitude": 8.6821,
+      "providers": ["Hetzner", "AWS", "GCP"]
+    },
+    {
+      "code": "au",
+      "name": "澳大利亚",
+      "flag": "🇦🇺",
+      "cities": ["悉尼"],
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "providers": ["AWS", "GCP"]
+    },
+    {
+      "code": "ca",
+      "name": "加拿大",
+      "flag": "🇨🇦",
+      "cities": ["温哥华", "多伦多"],
+      "latitude": 49.2827,
+      "longitude": -123.1207,
+      "providers": ["AWS", "GCP"]
+    },
+    {
+      "code": "nl",
+      "name": "荷兰",
+      "flag": "🇳🇱",
+      "cities": ["阿姆斯特丹"],
+      "latitude": 52.3676,
+      "longitude": 4.9041,
+      "providers": ["DigitalOcean", "AWS"]
+    },
+    {
+      "code": "fr",
+      "name": "法国",
+      "flag": "🇫🇷",
+      "cities": ["巴黎"],
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "providers": ["AWS", "GCP"]
+    },
+    {
+      "code": "in",
+      "name": "印度",
+      "flag": "🇮🇳",
+      "cities": ["孟买"],
+      "latitude": 19.0760,
+      "longitude": 72.8777,
+      "providers": ["AWS", "GCP"]
+    }
+  ]
+}
